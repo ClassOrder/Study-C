@@ -38,3 +38,13 @@
 - gets() : 한줄 단위로 읽음
 - scanf, gets는 자체적으로 보안결함이 존재 => BOF에 의한 Overrun으로 인한 보안 결함 발생 => gets_s(), scanf_s()를 사용할 것을 추천 => scanf_s()는 윈도우에만 있어서 다른 것을 사용해야할 경우도 있음
 - Non Buffered 계열의 _getchar() 같은 애들과는 근본이 다름(#include <conio.h>).
+
+### 이형 자료 간의 연산
+- type promotion 발생
+- 더 큰 자료형이 승리
+
+### 0으로 나누면?
+[유튜브영상: Don't ever divide by zero](https://www.youtube.com/watch?v=mZ7pUADoo58)
+
+### 소수점의 표현
+- %f.2(소수점 둘째자리까지 표현)
