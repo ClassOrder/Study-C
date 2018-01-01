@@ -28,3 +28,13 @@
 - CLI
 - GUI
 - UX
+
+# Buffer?
+- 메모리, 사전정의: 완충기
+
+### getchar(), scanf(), gets()
+- getchar() : 한글자씩 읽음
+- scanf() : 규칙에 따라 읽음
+- gets() : 한줄 단위로 읽음
+- scanf, gets는 자체적으로 보안결함이 존재 => BOF에 의한 Overrun으로 인한 보안 결함 발생 => gets_s(), scanf_s()를 사용할 것을 추천 => scanf_s()는 윈도우에만 있어서 다른 것을 사용해야할 경우도 있음
+- Non Buffered 계열의 _getchar() 같은 애들과는 근본이 다름(#include <conio.h>).
